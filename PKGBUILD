@@ -4,7 +4,7 @@ _realname="git-credential-manager"
 pkgname=("${_realname}")
 conflicts=("git-credential-manager-core")
 replaces=("git-credential-manager-core")
-pkgver=2.0.935
+pkgver=2.1.2
 pkgrel=1
 _realver=$pkgver
 _realtag=v${pkgver}
@@ -20,8 +20,8 @@ options=('!strip')
 
 source=("${zip_url}" "$src_zip_url")
 
-sha256sums=('3ce520927a4f048da19c4b9d3b449045a20a646ee941b16850be22f406f76047'
-            '83c3612e34a5759c97331430f300741b0bfdae7af8ee6189452032fc16b77b80')
+sha256sums=('14e0fae94c14ef100544dbb77aad0d59238d58afc6edfae4160f6ae6cb2588e2'
+            '57506f80e741dc7b98e03c78bca42c5db4014a52a2c985499ea02c17ced3af12')
 
 package() {
   prefix="$pkgdir/${MSYSTEM_PREFIX}"
